@@ -84,7 +84,7 @@ function QuizProvider({ children }) {
   );
 
   useEffect(function () {
-    fetch("https://quiz-api-43vo.onrender.com/questions")
+    fetch("https://quiz-api-gmv8.onrender.com/questions")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
       .catch((err) => dispatch({ type: "dataFailed" }));
